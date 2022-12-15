@@ -41,3 +41,4 @@ Approach, 6th Edition των Henessey και Patterson, βλέπουμε ότι 
 
 * <https://www.sciencedirect.com/topics/computer-science/static-power> (Colin Walls, in Embedded Software (Second Edition), 2012)
 * Διαλέξεις μαθήματος
+* Computer Architecture: A Quantitative Approach (Patterson, Henessey)
