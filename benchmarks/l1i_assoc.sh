@@ -8,7 +8,7 @@ command="${program_location}/401.bzip2/src/specbzip -o \"${program_location}/401
 benchmark="specbzip/l1i_assoc"
 for l1i_assoc in 1 2 4 8 16
 do
-    ${gem5}/build/ARM/gem5.opt -d ${benchmark}/${l1i_assoc} ${gem5}/configs/example/se.py ${options} --${testVariable} ${l1i_assoc} -c ${command} -I 100000000 &
+    eval ${gem5}/build/ARM/gem5.opt -d ${benchmark}/${l1i_assoc} ${gem5}/configs/example/se.py ${options} --${testVariable} ${l1i_assoc} -c ${command} -I 100000000 &
 done
 wait
 
@@ -16,7 +16,7 @@ command="${program_location}/429.mcf/src/specmcf -o \"${program_location}/429.mc
 benchmark="specmcf/l1i_assoc"
 for l1i_assoc in 1 2 4 8 16
 do
-    ${gem5}/build/ARM/gem5.opt -d ${benchmark}/${l1i_assoc} ${gem5}/configs/example/se.py ${options} --${testVariable} ${l1i_assoc} -c ${command} -I 100000000 &
+    eval ${gem5}/build/ARM/gem5.opt -d ${benchmark}/${l1i_assoc} ${gem5}/configs/example/se.py ${options} --${testVariable} ${l1i_assoc} -c ${command} -I 100000000 &
 done
 wait
 
@@ -24,7 +24,7 @@ command="${program_location}/456.hmmer/src/spechmmer -o \"--fixed 0 --mean 325 -
 benchmark="spechmmer/l1i_assoc"
 for l1i_assoc in 1 2 4 8 16
 do
-    ${gem5}/build/ARM/gem5.opt -d ${benchmark}/${l1i_assoc} ${gem5}/configs/example/se.py ${options} --${testVariable} ${l1i_assoc} -c ${command} -I 100000000 &
+    eval ${gem5}/build/ARM/gem5.opt -d ${benchmark}/${l1i_assoc} ${gem5}/configs/example/se.py ${options} --${testVariable} ${l1i_assoc} -c ${command} -I 100000000 &
 done
 wait
 
@@ -32,7 +32,7 @@ command="${program_location}/458.sjeng/src/specsjeng -o ${program_location}/spec
 benchmark="specsjeng/l1i_assoc"
 for l1i_assoc in 1 2 4 8 16
 do
-    ${gem5}/build/ARM/gem5.opt -d ${benchmark}/${l1i_assoc} ${gem5}/configs/example/se.py ${options} --${testVariable} ${l1i_assoc} -c ${command} -I 100000000 &
+    eval ${gem5}/build/ARM/gem5.opt -d ${benchmark}/${l1i_assoc} ${gem5}/configs/example/se.py ${options} --${testVariable} ${l1i_assoc} -c ${command} -I 100000000 &
 done
 wait
 
@@ -40,6 +40,6 @@ command="${program_location}/470.lbm/src/speclibm -o \"20 ${program_location}/47
 benchmark="speclibm/l1i_assoc"
 for l1i_assoc in 1 2 4 8 16
 do
-    ${gem5}/build/ARM/gem5.opt -d ${benchmark}/${l1i_assoc} ${gem5}/configs/example/se.py ${options} --${testVariable} ${l1i_assoc} -c ${command} -I 100000000 &
+    eval ${gem5}/build/ARM/gem5.opt -d ${benchmark}/${l1i_assoc} ${gem5}/configs/example/se.py ${options} --${testVariable} ${l1i_assoc} -c ${command} -I 100000000 &
 done
 wait
