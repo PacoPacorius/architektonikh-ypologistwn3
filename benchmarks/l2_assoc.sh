@@ -1,6 +1,6 @@
 # #!/bin/bash
-gem5="${HOME}/gem5"
-program_location="${HOME}/university/architectoniki/spec_cpu2006"
+gem5="${HOME}/Desktop/gem5"
+program_location="${gem5}/spec_cpu2006"
 testVariable="l2_assoc"
 options="--cpu-type=MinorCPU --caches --l2cache"
 
