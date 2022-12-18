@@ -28,7 +28,7 @@ do
 done
 wait
 
-command="${program_location}/458.sjeng/src/specsjeng -o ${program_location}/spec_cpu2006/458.sjeng/data/test.txt"
+command="${program_location}/458.sjeng/src/specsjeng -o ${program_location}/458.sjeng/data/test.txt"
 benchmark="specsjeng/l2_size"
 for l2_size in 32kB 64kB 128kB 256kB 512kB 1MB 2MB 4MB
 do

@@ -28,7 +28,7 @@ do
 done
 wait
 
-command="${program_location}/458.sjeng/src/specsjeng -o ${program_location}/spec_cpu2006/458.sjeng/data/test.txt"
+command="${program_location}/458.sjeng/src/specsjeng -o ${program_location}/458.sjeng/data/test.txt"
 benchmark="specsjeng/cache_line"
 for cache_line in 32 64 128 256 512
 do

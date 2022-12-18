@@ -28,7 +28,7 @@ do
 done
 wait
 
-command="${program_location}/458.sjeng/src/specsjeng -o ${program_location}/spec_cpu2006/458.sjeng/data/test.txt"
+command="${program_location}/458.sjeng/src/specsjeng -o ${program_location}/458.sjeng/data/test.txt"
 benchmark="specsjeng/l1i_assoc"
 for l1i_assoc in 1 2 4 8 16
 do
