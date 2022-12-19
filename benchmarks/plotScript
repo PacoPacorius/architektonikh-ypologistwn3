@@ -1,0 +1,14 @@
+set terminal postscript noenhanced
+set key noenhanced
+set term png
+#set output "l2_size.png"
+set output sprintf("%s.png", filename)
+set title sprintf("%s", filename) noenhanced
+set key outside
+set xtics rotate by -45
+#set key font ",6"
+set style data histogram
+set style histogram cluster
+set ylabel "Peak Power (W)"
+set style fill solid border -1
+plot for [COL=2:*:1] sprintf("%s.dat",filename) using COL:xticlabels(1) title columnheader
