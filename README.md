@@ -57,8 +57,25 @@ A9:
 McPAT. Πιστεύουμε ότι το πρόβλημα οφείλεται στο ότι χρησιμοποιήσαμε έκδοση gem5 νεότερη από ότι υπάρχει στο vm και στο ενδιάμεσο άλλαξε το formatting αυτών των αρχείων. Ως αποτέλεσμα, το
 GEM5ToMcPAT αδυνατούσε να κάνει parse τα απαραίτητα δεδομένα.
 
+#### 2. Παρουσιάστε με σχετικά γραφήματα τα αποτελέσματα σας. Δείξτε την επίδραση κάθε παραμέτρου που αλλάξατε στη προηγούμενη άσκηση (cache size, associativity, block size) σε σχέση με το power (χρησιμοποιήστε το peak power για αυτά τα γραφήματα).
+
+![cache line size to peak power diagram](/benchmarks/cache_line.png)
+
+![l1d association to peak power diagram](/benchmarks/l1d_assoc.png)
+
+![l1d size to peak power diagram](/benchmarks/l1d_size.png)
+
+![l1i association to peak power diagram](/benchmarks/l1i_assoc.png)
+
+![l1i size to peak power diagram](/benchmarks/l1i_size.png)
+
+![l2 association to peak power diagram](/benchmarks/l2_assoc.png)
+
+![l2 size to peak power diagram](/benchmarks/l2_size.png)
+
 ### Πηγές
 
 * <https://www.sciencedirect.com/topics/computer-science/static-power> (Colin Walls, in Embedded Software (Second Edition), 2012)
 * Διαλέξεις μαθήματος
 * Computer Architecture: A Quantitative Approach (Patterson, Henessey)
+* <https://alvinalexander.com/technology/gnuplot-charts-graphs-examples/>
